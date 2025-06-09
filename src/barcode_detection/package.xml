@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<package format="3">
+  <name>barcode_detection</name>
+  <version>0.0.1</version>
+  <description>Barcode detection with webcam and Raspberry Pi Camera (PiCam) using pyzbar, OpenCV, and ROS 2</description>
+
+  <maintainer email="faiha@todo.todo">faiha</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- ROS 2 dependencies -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>image_transport</exec_depend> <!-- For image topics -->
+  <exec_depend>cv_bridge</exec_depend> <!-- For ROS 2 <-> OpenCV bridge -->
+
+  <!-- Python libraries used -->
+  <exec_depend>opencv-python</exec_depend>
+  <exec_depend>pyzbar</exec_depend>
+  <exec_depend>numpy</exec_depend>
+
+  <!-- Optional: if you use launch files -->
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <!-- Testing dependencies -->
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
+
